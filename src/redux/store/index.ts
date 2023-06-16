@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk, { ThunkAction } from 'redux-thunk';
 import { Action } from 'redux';
-import rootReducer, { RootState } from './reducer';
+import rootReducer, { RootState } from '../reducers/reducer';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
