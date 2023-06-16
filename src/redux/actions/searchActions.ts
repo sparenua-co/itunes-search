@@ -1,5 +1,5 @@
 import axios from 'axios'; 
-import { ITunesItem } from '../types';
+import { ITunesItem } from '../../types';
 import { AppThunk } from "../store";
 
 interface SearchStartAction {
