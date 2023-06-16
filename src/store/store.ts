@@ -1,5 +1,3 @@
-// src/store.ts
-
 import { createStore, applyMiddleware, Action } from 'redux';
 import thunk, { ThunkAction, ThunkDispatch } from 'redux-thunk';
 import rootReducer from '../reducers';
