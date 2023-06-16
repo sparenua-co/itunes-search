@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
  
   },
   card: {
-    minHeight: 280,
+    minHeight: 360,
     padding: 0,
     marginBottom: 10,
 
@@ -227,7 +227,7 @@ const Search: React.FC = () => {
                         <Card style={{ cursor: "pointer" }} className={classes.card}>
                           <CardMedia
                             component="img"
-                            height="180"
+                            height="260"
                             width="100"
                             image={item.artworkUrl100}
                             alt={item.trackName}
