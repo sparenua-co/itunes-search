@@ -114,7 +114,7 @@ const Search: React.FC = () => {
   };
 
   const handleSearch = () => {
-    if (searchTerm && searchTerm.length >= 3) {
+    if (searchTerm) {
       setVisibleItems([]);
       setStartIndex(0);
       setHasMore(true);
