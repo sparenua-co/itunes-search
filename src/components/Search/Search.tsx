@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { startSearch } from "../../redux/actions/searchActions";
-import { ITunesItem } from "../../types";
+import { ITunesItem } from "../../redux/types";
 import {
   Box,
   Typography,

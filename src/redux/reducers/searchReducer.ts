@@ -1,5 +1,5 @@
 import { SearchAction } from '../actions/searchActions';
-import { ITunesItem } from '../../types';
+import { ITunesItem } from '../types';
 
 interface SearchState {
   items: ITunesItem[];
