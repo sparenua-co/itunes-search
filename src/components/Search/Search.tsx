@@ -191,7 +191,7 @@ const Search: React.FC = () => {
           <Typography  variant="h1" component="div" className={classes.Title}>
             Tune Finder
           </Typography>
-          <Box className={classes.search}>
+          <Box className={classes.search} role="search">
             <TextField
               label="Search for artist, album, or song"
               variant="outlined"
@@ -200,19 +200,20 @@ const Search: React.FC = () => {
               value={searchTerm}
               onChange={handleChange}
               inputRef={inputRef} // focus on load
+              aria-label="Search Input" 
             />
             <Button
               variant="contained"
               color="primary"
               onClick={handleSearch}
               className={classes.button}
-          
+              aria-label="Search Button"  
             >
               Search
             </Button>
           </Box>
           {visibleItems.length > 0 && (
-            <List>
+            <List aria-label="Search Results List"> 
               {noMatch ? (
                 <Alert className={classes.alert} severity="info">
                   No matching results found.
@@ -220,7 +221,7 @@ const Search: React.FC = () => {
               ) : (
                 <Grid container spacing={2}>
                   {visibleItems.map((item: ITunesItem) => (
-                    <Grid item xs={6} sm={4} md={4} lg={3} key={item.trackId}>
+                    <Grid item xs={6} sm={4} md={4} lg={3} key={item.trackId} role="listitem" aria-label={item.trackName}>
                       {loading ? (
                         <Skeleton height={180} />
                       ) : (
@@ -264,4 +265,3 @@ const Search: React.FC = () => {
 };
 
 export default Search;
-
